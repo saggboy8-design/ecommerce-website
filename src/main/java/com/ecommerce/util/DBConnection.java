@@ -5,9 +5,14 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DBConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/ecommerce?useSSL=false&serverTimezone=UTC";
+
+    private static final String URL =
+        "jdbc:mysql://viaduct.proxy.rlwy.net:50100/railway?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC";
+
     private static final String USER = "root";
-    private static final String PASS = "";   // change to your MySQL password
+
+    // Put your Railway MySQL password here
+    private static final String PASS = "fKbUVMzhmFlAfrhjCchxOYDpzWuAXDNP";
 
     static {
         try {
